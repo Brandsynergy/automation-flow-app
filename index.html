@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flow Automation Builder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🔄 Flow Automation Builder</h1>
+            <p>Build workflows using simple natural language</p>
+        </header>
+
+        <div class="workflow-container">
+            <div class="workflow-header">
+                <h2>Your Workflow</h2>
+                <button id="addStep" class="btn-primary">+ Add Step</button>
+            </div>
+
+            <div id="workflowSteps" class="workflow-steps">
+                <!-- Steps will be added here dynamically -->
+            </div>
+
+            <div class="workflow-actions">
+                <button id="runWorkflow" class="btn-success">▶️ Run Workflow</button>
+                <button id="clearWorkflow" class="btn-danger">🗑️ Clear All</button>
+            </div>
+        </div>
+
+        <div class="results-container">
+            <h3>Results</h3>
+            <div id="results" class="results-output">
+                <p class="placeholder">Results will appear here when you run your workflow...</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
